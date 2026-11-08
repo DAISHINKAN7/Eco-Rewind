@@ -1,0 +1,38 @@
+# Raw data lives on Google Drive only. Paths are as seen from Colab after
+# drive.mount('/content/drive'). Drive folder IDs are kept for traceability.
+drive_root: /content/drive/MyDrive
+
+calendar:
+  start: 2016Q1
+  end: 2023Q4
+
+sources:
+  - name: everglades_v1
+    site: everglades
+    drive_folder_id: 1ioA0_Q-D7tOurnNDETP_yyV1GFnejU7-
+    path: EcoRewind/Everglades
+    glob: "Everglades_*.tif"
+  - name: mississippi_v1
+    site: mississippi
+    drive_folder_id: 1rmhAIB1HKhIfSiOCS_XhDmR5xsmo0fzg
+    path: EcoRewind/Mississippi
+    glob: "Mississippi_*.tif"
+  - name: mississippi_v2
+    site: mississippi
+    drive_folder_id: 1pKP1HQq8x6KoO-eTHDKW7XG7Eka6LzG0
+    # The Drive folder is literally titled "EcoRewind/Mississippi_v2" at the
+    # My Drive root; the notebook resolves the real mount path automatically.
+    path: null
+    glob: "Mississippi_v2_*.tif"
+
+sites:
+  everglades:
+    event: Hurricane Irma
+    landfall: 2017-09-10
+  mississippi:
+    event: Hurricane Ida
+    landfall: 2021-08-29
+
+# Band order recorded in v1/v2 export metadata. The audit verifies it per file.
+expected_bands: [Blue, Green, Red, NIR, NDVI, NDWI, SAR_VV]
+expected_pixel_m: 10

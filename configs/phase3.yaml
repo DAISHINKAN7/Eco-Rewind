@@ -1,0 +1,18 @@
+# Phase 3: deep models (MASTER_PROMPT §8). Fixed before any deep run; not tuned on event windows.
+T_in: {A: 8, B: 8}              # pre-registered (model_inputs.T_in)
+patch: {A: 128, B: 64}          # training / prediction tile (px); training origins on a size/2 grid (Track B: stride 32)
+batch: {A: 8, B: 16}
+epochs: 40
+steps_per_epoch: 150
+lr: 0.001
+weight_decay: 0.05
+patience: 8                     # epochs without validation NDVI R² improvement
+kill_after: 15                  # pre-registered: abort if best validation NDVI R² < 0 after 15 epochs
+min_history: 4                  # earliest anchor: 4 observed quarters (inputs zero-padded to T_in, validity 0)
+# validation: calibration-fold pairs from every anchor, so every target distance is checked
+val_samples: 64
+arch:
+  convlstm: {hid: 32, layers: 2}
+  simvp: {hid_s: 32, hid_t: 128, n_t: 4}
+  ecotransformer: {dim: 128, depth: 4, heads: 4, patch: 8, drop: 0.1}
+smooth_weight: 0.1             # Phase 5 ablation only (variant 'smooth'): penalty on consecutive median leads

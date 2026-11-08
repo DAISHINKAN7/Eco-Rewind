@@ -1,0 +1,25 @@
+# Phase 1: data cube, masks, blocks, folds (MASTER_PROMPT §6).
+max_reflectance: 1.0          # reflectance >= this is treated as saturated / invalid
+chunk: 256
+
+blocks:
+  # Deviation from the plan's 2.56 km: 2.56 km is 85.33 px at 30 m, so blocks could not nest in both tracks.
+  # 3.84 km = 384 px (Track A, 3 x 128-px patches) = 128 px (Track B, 2 x 64-px patches).
+  size_m: 3840
+  # Total gap between blocks of different folds = 2 x buffer_m = 1.28 km = one Track A patch width.
+  buffer_m: 640
+
+folds: {n: 5, seed: 20261027, n_trials: 500}
+
+# Damage-exposure proxy, used ONLY to stratify folds: Track B NDVI in the first full post-event quarter minus
+# the mean of the same calendar quarter in the two preceding years (block median over evaluable pixels).
+stratify_proxy: {track: B, kind: ndvi_drop, baseline_years: 2}
+
+patches:
+  A: {size: 128, stride: 128}
+  B: {size: 64, stride: 64}
+
+static:
+  wetland_strict_erode_px: 1
+
+normalisation: {n_sample_pixels: 200000, seed: 0}

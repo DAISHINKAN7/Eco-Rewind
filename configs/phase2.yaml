@@ -1,0 +1,13 @@
+# Phase 2: evaluation harness + CPU baselines (MASTER_PROMPT §7).
+# Predicted channels: NDVI, NDMI, NDWI (primary for claims), VV, VH. LightGBM models the primary three only.
+harmonic: {min_obs: 7, semiannual: true, iters: 5}
+lgbm:
+  channels: [NDVI, NDMI, NDWI]
+  n_lags: 4
+  n_rows: 120000        # training pairs per channel (pixel x anchor x distance), all inside pre-cutoff history
+  max_anchors: 12
+  n_estimators: 300
+  learning_rate: 0.05
+  num_leaves: 31
+  seed: 0
+# Conformal: calibration fold = (test fold + 1) mod 5; scores from placebo windows only (undisturbed).

@@ -1,0 +1,14 @@
+# Phase 5.6 — ILLUSTRATIVE carbon conversion (MASTER_PROMPT §10.6). Only for placebo-passing models.
+# !!! The densities below are broad order-of-magnitude PLACEHOLDERS. Replace each with a value + citation from the
+# literature for the specific ecosystem and set verified: true before any number is published. !!!
+verified: false
+statistic: "lead 0"            # the only robust result (Phase 4); leads 1-3 are not converted
+sites:
+  mississippi:                 # Barataria Basin, Spartina-dominated salt / brackish marsh
+    ecosystem: salt marsh (Spartina)
+    agb_carbon_t_per_ha: {low: 2.0, high: 7.0}       # aboveground biomass carbon, t C / ha  — PLACEHOLDER
+    citation: "TODO"
+  everglades:                  # mangrove fringe + sawgrass marsh
+    ecosystem: mangrove / sawgrass
+    agb_carbon_t_per_ha: {low: 20.0, high: 120.0}    # PLACEHOLDER
+    citation: "TODO"

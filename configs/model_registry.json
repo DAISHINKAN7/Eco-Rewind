@@ -1,0 +1,334 @@
+[
+ {
+  "id": "persistence",
+  "name": "Persistence",
+  "family": "baseline",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase2_baselines_v3",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "climatology",
+  "name": "Seasonal climatology",
+  "family": "baseline",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase2_baselines_v3",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "harmonic",
+  "name": "Harmonic regression (trend)",
+  "family": "baseline",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase2_baselines_v3",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "harmonic_notrend",
+  "name": "Harmonic regression (no trend, A1)",
+  "family": "baseline",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase2_baselines_v3",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "lgbm",
+  "name": "LightGBM quantile",
+  "family": "baseline",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase2_baselines_v3",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "synth_control",
+  "name": "Synthetic control (matched DiD)",
+  "family": "baseline",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": true,
+  "params": null,
+  "run_prefix": "phase2_baselines_v3",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "convlstm",
+  "name": "ConvLSTM",
+  "family": "deep",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": 150000,
+  "run_prefix": "phase3_core_v1",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "simvp",
+  "name": "SimVP",
+  "family": "deep",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": 850000,
+  "run_prefix": "phase3_core_v1",
+  "lab_exportable": true,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer",
+  "name": "EcoTransformer v2",
+  "family": "deep",
+  "status": "done",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": 2290000,
+  "run_prefix": "phase3_core_v1",
+  "lab_exportable": false,
+  "tags": [
+   "attention",
+   "SAR gate",
+   "quantile"
+  ]
+ },
+ {
+  "id": "ecotransformer_off",
+  "name": "EcoTransformer v2 \u00b7 SAR off",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "sar": "off"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_ablations",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer_concat",
+  "name": "EcoTransformer v2 \u00b7 SAR concat",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "sar": "concat"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_ablations",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer__smooth",
+  "name": "EcoTransformer v2 \u00b7 smoothness loss",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "flag": "smooth"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_ablations",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer__nostatic",
+  "name": "EcoTransformer v2 \u00b7 static off",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "flag": "nostatic"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_ablations",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer__nomask",
+  "name": "EcoTransformer v2 \u00b7 mask off",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "flag": "nomask"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_ablations",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer__tin4",
+  "name": "EcoTransformer v2 \u00b7 T_in 4",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "flag": "tin4"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_ablations",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer__tin12",
+  "name": "EcoTransformer v2 \u00b7 T_in 12",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "flag": "tin12"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_ablations",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "simvp__xfer",
+  "name": "simvp \u00b7 cross-site transfer",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "simvp",
+  "variant": {
+   "flag": "xfer"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_transfer",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "ecotransformer__xfer",
+  "name": "ecotransformer \u00b7 cross-site transfer",
+  "family": "ablation",
+  "status": "planned",
+  "parent": "ecotransformer",
+  "variant": {
+   "flag": "xfer"
+  },
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": "phase5_transfer",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "simvp__nbr",
+  "name": "Neighbour-informed SimVP (A5)",
+  "family": "experimental",
+  "status": "planned",
+  "parent": "simvp",
+  "variant": {
+   "flag": "nbr"
+  },
+  "preregistered": false,
+  "uses_post_cutoff_info": true,
+  "params": null,
+  "run_prefix": "phase5_neighbour",
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "presto_head",
+  "name": "Presto head",
+  "family": "expanded",
+  "status": "planned",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": null,
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "prithvi_head",
+  "name": "Prithvi-EO-2.0 head",
+  "family": "expanded",
+  "status": "planned",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": null,
+  "lab_exportable": false,
+  "tags": []
+ },
+ {
+  "id": "earthformer",
+  "name": "Earthformer",
+  "family": "expanded",
+  "status": "planned",
+  "parent": null,
+  "variant": null,
+  "preregistered": true,
+  "uses_post_cutoff_info": false,
+  "params": null,
+  "run_prefix": null,
+  "lab_exportable": false,
+  "tags": []
+ }
+]

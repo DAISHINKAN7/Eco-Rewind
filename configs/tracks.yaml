@@ -1,0 +1,50 @@
+# Phase 0 export settings. Collection IDs verified by gee/preflight.py against
+# the live catalogue before export (see docs/DATA.md).
+export:
+  ee_project: null            # REQUIRED: your Earth Engine cloud project id
+  drive_folder: EcoRewind2_exports   # top-level Drive folder EE writes into
+  nodata: -32768
+  cloud_optimized: true
+
+tracks:
+  A:
+    name: Sentinel-2 10 m
+    res: 10
+    start: 2015Q3
+    end: 2023Q4
+    # auto = surface reflectance if it covers every quarter of the series over the
+    # AOI, else top-of-atmosphere for the WHOLE series of that site (never mixed).
+    s2_product: {everglades: toa, mississippi: toa}   # resolved by the Phase 0 preflight (reports/phase_0_report.md)
+    s2_sr: COPERNICUS/S2_SR_HARMONIZED
+    s2_toa: COPERNICUS/S2_HARMONIZED
+    cloud_score_plus: GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED
+    cs_band: cs_cdf
+    cs_threshold: 0.6
+    # output name: source band
+    bands: {Blue: B2, Green: B3, Red: B4, NIR: B8, SWIR1: B11, SWIR2: B12}
+    dtype: int16              # DN, reflectance = DN * 1e-4
+  B:
+    name: HLS 30 m
+    res: 30
+    start: 2013Q2
+    end: 2023Q4
+    hls_l30: NASA/HLS/HLSL30/v002
+    hls_s30: NASA/HLS/HLSS30/v002
+    bands_l30: {Blue: B2, Green: B3, Red: B4, NIR: B5, SWIR1: B6, SWIR2: B7}
+    bands_s30: {Blue: B2, Green: B3, Red: B4, NIR: B8A, SWIR1: B11, SWIR2: B12}
+    # Fmask bits masked as unclear: 1 cloud, 2 adjacent cloud/shadow, 3 cloud shadow, 4 snow/ice
+    fmask_bits: [1, 2, 3, 4]
+    fmask_water_bit: 5        # exported as water_frac, not masked
+    dtype: float32
+
+s1:
+  collection: COPERNICUS/S1_GRD
+  instrument_mode: IW
+  polarisations: [VV, VH]
+  focal_median_3x3: false
+  # pre-2022 sanity check: median n_s1_obs per quarter should be >= this
+  min_expected_obs: 6
+
+static:
+  dem: COPERNICUS/DEM/GLO30_2024_1
+  worldcover: ESA/WorldCover/v200

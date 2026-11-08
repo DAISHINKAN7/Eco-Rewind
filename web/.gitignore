@@ -1,0 +1,8 @@
+node_modules
+dist
+public/data/layers
+public/data/pixels
+public/data/training
+public/data/lab
+public/data/maps.json
+tsconfig.tsbuildinfo

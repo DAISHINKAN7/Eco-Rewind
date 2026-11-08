@@ -1,0 +1,11 @@
+# AOIs from the v1 audit (reports/data_audit_final.md). Evaluation stays inside
+# bounds_lonlat; the export adds buffer_m of edge context on every side.
+sites:
+  everglades:
+    bounds_lonlat: [-80.8988, 25.2100, -80.7009, 25.3901]   # W, S, E, N
+    crs: EPSG:32617          # UTM 17N
+    buffer_m: 1000
+  mississippi:
+    bounds_lonlat: [-90.8025, 29.3600, -90.5972, 29.5400]   # Barataria Bay (v2 AOI)
+    crs: EPSG:32615          # UTM 15N
+    buffer_m: 1000

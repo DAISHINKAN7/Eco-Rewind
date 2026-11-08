@@ -1,0 +1,90 @@
+# Pre-registration (MASTER_PROMPT §3 rule 4). Committed BEFORE any model is trained or any placebo is run.
+# Changing anything below after results exist must be logged in reports/RESULTS_CHANGELOG.md with a reason.
+# Status: DRAFT until scripts/check_storm_record.py has been run and its conflicts resolved by the user.
+# 2026-10-27 storm check (HURDAT2 to 2025): ida_placebo_2019 conflicted (Barry, Olga) -> excluded; replaced by
+# Track B placebos 2015-08-29 and 2016-08-29 (user decision); irma capped at max_horizon 3 because of Gordon.
+status: final   # amended 2026-10-27 before any deep model was trained (A1-A3 below; RESULTS_CHANGELOG.md).
+# 2026-10-27: storm check clean for all windows (reports/storm_record.md)
+
+events:
+  ida:  {site: mississippi, landfall: 2021-08-29, tracks: [A, B], max_horizon: 8, primary_track: A}
+  irma: {site: everglades,  landfall: 2017-09-10, tracks: [B, A], max_horizon: 3, primary_track: B,
+         note: "capped at 3 (2017Q4-2018Q2): TS Gordon passed 15 km from the AOI on 2018-09-03 (50 kt).
+                Horizons 4-8 may only be shown as a labelled Irma+Gordon compound period, outside any claim."}
+
+# Fake landfalls. The window that must be storm-free runs from the start of the cutoff quarter (storms there
+# would leak into the targets) to the end of the last evaluable quarter (max_horizon after the cutoff quarter).
+placebos:
+  ida_placebo_2018:   {site: mississippi, date: 2018-08-29, tracks: [A, B], max_horizon: 3}   # 2018Q4-2019Q2
+  ida_placebo_2019:   {site: mississippi, date: 2019-08-29, tracks: [A, B], max_horizon: 2,
+                       excluded: true, reason: "HURDAT2: Barry 65 kt at 99 km (2019-07-13, inside the cutoff quarter); Olga 45 kt at 87 km (2019-10-26)"}
+  ida_placebo_2015:   {site: mississippi, date: 2015-08-29, tracks: [B], max_horizon: 3}      # Track A history too short
+  ida_placebo_2016:   {site: mississippi, date: 2016-08-29, tracks: [B], max_horizon: 3}      # Track A history too short
+  ida_placebo_2020:   {site: mississippi, date: 2020-08-29, tracks: [A, B], max_horizon: 2,
+                       excluded: true, reason: "2020 was an active Louisiana season (Cristobal, Marco, Laura, Zeta)"}
+  irma_placebo_2015:  {site: everglades,  date: 2015-09-10, tracks: [B], max_horizon: 4}      # Track A history too short
+  irma_placebo_2016:  {site: everglades,  date: 2016-09-10, tracks: [B], max_horizon: 3}      # 2016Q4-2017Q2, before Irma
+
+storm_check: {radius_km: 200, min_wind_kt: 34, source: NOAA HURDAT2}
+
+model_inputs:
+  T_in: {A: 8, B: 8}          # ablation 4 and 12 (Track B)
+  horizon_max: 8
+  primary_bands: [NDVI, NDMI, NDWI]
+
+evaluation:
+  mask: wetland_main          # robustness: wetland_strict
+  inside_aoi_only: true
+  exclude_fold_buffers: true
+  first_full_post: {ida: 2021Q4, irma: 2017Q4}
+  compound_report_only: {irma: "horizons 4-8 (Irma + Gordon), never in claims"}
+  interval: 0.90
+
+pass_criteria:
+  placebo:
+    real_exceeds_placebo_quantile: 0.95   # real attributed loss > 95th pct of placebo distribution (windows x folds x seeds)
+    placebo_interval_coverage_min: 0.80   # 90% intervals must cover the placebo truth on >= 80% of pixels
+  deep_vs_baseline: "report plainly whether any deep model beats harmonic regression on held-out blocks"
+
+kill_criteria:
+  ndvi_r2_negative_after_epochs: 15       # abort a deep run if validation NDVI R2 < 0 after 15 epochs
+  no_carbon_if_placebo_fails: true
+  no_new_architecture_after_week: 5
+
+model_selection: "checkpoint and early stopping on validation R2 per band (NDVI primary), never on loss alone"
+
+amendments:   # fixed before Phase 3; no deep model existed, no event result was used to choose them
+  A1_harmonic_notrend:
+    what: "add rung 'harmonic_notrend' = harmonic regression without the linear trend term; no tuned parameter"
+    why: "Phase 2: trended harmonic < climatology on every site (slope extrapolation with 8-33 quarters)"
+    effect: "deep_vs_baseline compares against the strongest baseline on the ladder, not only harmonic (stricter)"
+  A2_lead0:
+    what: "secondary analysis: lead 0 = event-quarter _POST partial (event) / full cutoff quarter (placebo)"
+    why: "the most immediate post-storm observation; damage may have partly recovered by lead 1"
+    caveats: "placebo lead 0 is a full quarter while the event _POST composite is ~1 month: calibration is approximate;
+      lead 0 never enters history; primary claims stay at leads >= 1 as originally registered"
+  A3_placebo_post:
+    what: "placebo lead 0 = composite over the same days as the event _POST partial (fake date + 3 d -> quarter end),
+      files *_PPOST; replaces the full-quarter placebo lead 0"
+    why: "v2 lead-0 event deficits (+0.07 to +0.12) were compared with full-quarter placebos; compositing mismatch"
+    seen: "phase2_baselines_v2 lead-0 table (decided after seeing it; the comparison only becomes stricter)"
+  A4_placebo_test_operationalisation:
+    what: "statistic = NDVI deficit per test fold, mean over leads 1-3 (horizon shared by all windows); placebo
+      distribution pooled over windows x folds x seeds per model family; PASS iff event median > placebo p95 AND
+      placebo NDVI coverage (leads >= 1) >= 0.80. Secondary: same rule at lead 0. Placebo in space: least-exposed
+      20 % of blocks by coast distance (outcome-independent proxy; the Phase 1 NDVI-drop proxy would be circular)"
+    when: "2026-11-02, written into scripts/placebo_verdict.py before it was run on real results"
+    caveat: "Mississippi A has 1 placebo window: 5-10 placebo values, so p95 is close to the placebo maximum"
+  A5_phase5_experiments:
+    when: "2026-11-02, written before any Phase 5 GPU run"
+    ablations: "EcoTransformer v2 on Everglades Track B (all folds, seed 0): SAR off, SAR concat, smoothness loss
+      (w = 0.1), static off, mask off, T_in 4, T_in 12. Judged on validation NDVI R2 only; test skill reported for
+      information; no ablation result changes the published models"
+    transfer: "SimVP and EcoTransformer v2 trained on the other site's Track B event history, applied to this site's
+      Track B windows (same folds); compared with on-site training"
+    resolution: "ConvLSTM, SimVP, EcoTransformer v2 (seed 0) on Mississippi Track B, compared with Track A"
+    neighbour_informed: "EXPLORATORY, declared after Phase 3/4 results were seen. SimVP on anomalies from the
+      same-quarter mean of inland (top 40 % coast distance) training-fold donor pixels of the same land-cover class;
+      the forecast adds back the donors' observed post-cutoff mean (uses post-cutoff information, like synth_control).
+      Seeds 0-1, Everglades B and Mississippi A, same placebo test. Reported separately, never in the headline verdict;
+      donor exposure biases attribution toward zero if inland donors were also hit"

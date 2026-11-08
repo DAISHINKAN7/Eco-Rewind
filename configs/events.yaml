@@ -1,0 +1,4 @@
+post_offset_days: 3
+events:
+  irma: {site: everglades, landfall: 2017-09-10, event_quarter: 2017Q3, first_full_post: 2017Q4}
+  ida:  {site: mississippi, landfall: 2021-08-29, event_quarter: 2021Q3, first_full_post: 2021Q4}

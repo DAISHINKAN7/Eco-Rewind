@@ -1,0 +1,9 @@
+date,platform,gpu,run_id,wall_clock_h,est_ccu,notes
+2026-10-27,earth-engine,none,phase0_export,,0,96.6 EECU-h of 150 (Community tier)
+2026-10-27,colab,cpu,phase0_all,,1.02,CPU runtime ~0.08 CCU/h; preflight, exports, audits (200 -> 198.98)
+2026-10-27,colab,cpu,phase1_all,,0.05,cubes + folds + storm check (198.98 -> 198.93)
+2026-10-28,colab,cpu,phase2_baselines_v1,,0.28,5 baselines x 2 sites x 2 tracks (198.93 -> 198.65)
+2026-10-28,colab,cpu,phase2_baselines_v2+v3,,,not measured separately; included in the balance change below
+2026-10-28,colab,t4,phase3_timing,,~1.3,~1 h T4 High-RAM at 1.27 CCU/h; balance now 396.32 after Colab Pro monthly top-up (was 198.65)
+2026-10-28,earth-engine,none,a3_placebo_post_exports,,0,12 small PPOST exports (EECU not measured)
+2026-11-02,colab,t4,phase3_core_v1,,~63.5,3 models x 5 folds x 2 seeds, Irma B + Ida A incl. restarts (396.32 -> 331.5; includes the timing run's remainder)
