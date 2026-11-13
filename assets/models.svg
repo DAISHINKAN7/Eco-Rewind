@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" role="img" aria-label="Model zoo">
+<title>Model zoo</title><style>text{font-family:'Inter Tight',Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#0E1A24}
+.mu{fill:#5B6B78} .k{fill:#5B6B78;font-size:12px;letter-spacing:.18em;font-weight:600}
+.h{font-weight:700;letter-spacing:-.02em} .m{font-family:'JetBrains Mono',Consolas,monospace}
+.flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite} @keyframes flow{to{stroke-dashoffset:-24}}
+.gx{transform-box:fill-box;transform-origin:left center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+.gxr{transform-box:fill-box;transform-origin:right center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes gx{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fade{animation:fade 9s ease infinite} @keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:2400;animation:draw 8s ease-in-out infinite} @keyframes draw{0%{stroke-dashoffset:2400}45%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:2400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 8s ease infinite} @keyframes pop{0%,5%{transform:scale(0)}12%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite reverse} @keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 6s ease-in-out infinite} @keyframes scan{0%{transform:translateX(0)}50%{transform:translateX(1080px)}100%{transform:translateX(0)}}</style>
+<rect width="1200" height="470" rx="14" fill="#E8ECEF"/><line x1="40" y1="0" x2="40" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="120" y1="0" x2="120" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="200" y1="0" x2="200" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="280" y1="0" x2="280" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="360" y1="0" x2="360" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="440" y1="0" x2="440" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="520" y1="0" x2="520" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="600" y1="0" x2="600" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="680" y1="0" x2="680" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="760" y1="0" x2="760" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="840" y1="0" x2="840" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="920" y1="0" x2="920" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1000" y1="0" x2="1000" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1080" y1="0" x2="1080" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1160" y1="0" x2="1160" y2="470" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><rect x=".5" y=".5" width="1199" height="469" rx="14" fill="none" stroke="#C9D2D9"/>
+<text x="40" y="48" font-size="14" class="k" text-anchor="start" >MODEL ZOO</text>
+<text x="40" y="86" font-size="30" class="h" text-anchor="start" >19 models · one loader · one split · one metric suite</text>
+<rect x="40" y="100" width="44" height="3" fill="#FF4B2B"/>
+<rect x="40" y="150" width="210" height="290" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="40" y="150" width="210" height="4" fill="#0E1A24"/>
+<text x="58" y="184" font-size="12" class="k" text-anchor="start" >BASELINES</text>
+<text x="232" y="196" font-size="40" class="h m" text-anchor="end" style="fill:#0E1A24">6</text>
+<text x="58" y="236" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.00s">Persistence</text>
+<text x="58" y="264" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.12s">Seasonal climatology</text>
+<text x="58" y="292" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.24s">Harmonic (trend)</text>
+<text x="58" y="320" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.36s">Harmonic ∅trend</text>
+<text x="58" y="348" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.48s">LightGBM</text>
+<text x="58" y="376" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.60s">Synthetic control</text>
+<rect x="266" y="150" width="210" height="290" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="266" y="150" width="210" height="4" fill="#1F3A5F"/>
+<text x="284" y="184" font-size="12" class="k" text-anchor="start" >DEEP</text>
+<text x="458" y="196" font-size="40" class="h m" text-anchor="end" style="fill:#1F3A5F">3</text>
+<text x="284" y="236" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.20s">SimVP</text>
+<text x="284" y="264" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.32s">ConvLSTM</text>
+<text x="284" y="292" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.44s">EcoTransformer</text>
+<rect x="492" y="150" width="210" height="290" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="492" y="150" width="210" height="4" fill="#8AA0B3"/>
+<text x="510" y="184" font-size="12" class="k" text-anchor="start" >ABLATIONS</text>
+<text x="684" y="196" font-size="40" class="h m" text-anchor="end" style="fill:#8AA0B3">7</text>
+<text x="510" y="236" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.40s">SAR concat</text>
+<text x="510" y="264" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.52s">SAR off</text>
+<text x="510" y="292" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.64s">T_in = 4</text>
+<text x="510" y="320" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.76s">T_in = 12</text>
+<text x="510" y="348" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.88s">No mask</text>
+<text x="510" y="376" font-size="14" class="fade" text-anchor="start" style="animation-delay:1.00s">No statics</text>
+<text x="510" y="404" font-size="14" class="fade" text-anchor="start" style="animation-delay:1.12s">Smoothed / NBR</text>
+<rect x="718" y="150" width="210" height="290" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="718" y="150" width="210" height="4" fill="#FF4B2B"/>
+<text x="736" y="184" font-size="12" class="k" text-anchor="start" >TRANSFER</text>
+<text x="910" y="196" font-size="40" class="h m" text-anchor="end" style="fill:#FF4B2B">2</text>
+<text x="736" y="236" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.60s">SimVP FL → LA</text>
+<text x="736" y="264" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.72s">EcoT FL → LA</text>
+<rect x="944" y="150" width="210" height="290" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="944" y="150" width="210" height="4" fill="#D99A2B"/>
+<text x="962" y="184" font-size="12" class="k" text-anchor="start" >POST-HOC</text>
+<text x="1136" y="196" font-size="40" class="h m" text-anchor="end" style="fill:#D99A2B">1</text>
+<text x="962" y="236" font-size="14" class="fade" text-anchor="start" style="animation-delay:0.80s">SimVP · neighbours</text></svg>

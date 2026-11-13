@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-label="Timeline">
+<title>Timeline</title><style>text{font-family:'Inter Tight',Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#0E1A24}
+.mu{fill:#5B6B78} .k{fill:#5B6B78;font-size:12px;letter-spacing:.18em;font-weight:600}
+.h{font-weight:700;letter-spacing:-.02em} .m{font-family:'JetBrains Mono',Consolas,monospace}
+.flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite} @keyframes flow{to{stroke-dashoffset:-24}}
+.gx{transform-box:fill-box;transform-origin:left center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+.gxr{transform-box:fill-box;transform-origin:right center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes gx{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fade{animation:fade 9s ease infinite} @keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:2400;animation:draw 8s ease-in-out infinite} @keyframes draw{0%{stroke-dashoffset:2400}45%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:2400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 8s ease infinite} @keyframes pop{0%,5%{transform:scale(0)}12%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite reverse} @keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 6s ease-in-out infinite} @keyframes scan{0%{transform:translateX(0)}50%{transform:translateX(1080px)}100%{transform:translateX(0)}}</style>
+<rect width="1200" height="430" rx="14" fill="#E8ECEF"/><line x1="40" y1="0" x2="40" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="120" y1="0" x2="120" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="200" y1="0" x2="200" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="280" y1="0" x2="280" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="360" y1="0" x2="360" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="440" y1="0" x2="440" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="520" y1="0" x2="520" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="600" y1="0" x2="600" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="680" y1="0" x2="680" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="760" y1="0" x2="760" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="840" y1="0" x2="840" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="920" y1="0" x2="920" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1000" y1="0" x2="1000" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1080" y1="0" x2="1080" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1160" y1="0" x2="1160" y2="430" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><rect x=".5" y=".5" width="1199" height="429" rx="14" fill="none" stroke="#C9D2D9"/>
+<text x="40" y="48" font-size="14" class="k" text-anchor="start" >THE RECORD</text>
+<text x="40" y="86" font-size="30" class="h" text-anchor="start" >33 quarters at 10 m · 42 at 30 m · two storms, two placebo years</text>
+<rect x="40" y="100" width="44" height="3" fill="#FF4B2B"/>
+<rect x="40" y="150" width="1120" height="250" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="60.0" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.04s"/>
+<text x="60.0" y="250" font-size="12" class="m mu" text-anchor="start" >2013</text>
+<rect x="85.11627906976744" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.08s"/>
+<rect x="110.23255813953489" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.12s"/>
+<rect x="135.34883720930233" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.16s"/>
+<rect x="160.46511627906978" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.20s"/>
+<text x="160.46511627906978" y="250" font-size="12" class="m mu" text-anchor="start" >2014</text>
+<rect x="185.5813953488372" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.24s"/>
+<rect x="210.69767441860466" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.28s"/>
+<rect x="235.8139534883721" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.32s"/>
+<rect x="260.93023255813955" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.36s"/>
+<text x="260.93023255813955" y="250" font-size="12" class="m mu" text-anchor="start" >2015</text>
+<rect x="286.04651162790697" y="200" width="22.1" height="26" rx="2" fill="#8AA0B3" opacity="0.5" class="pop" style="animation-delay:0.40s"/>
+<rect x="311.1627906976744" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.44s"/>
+<rect x="336.27906976744185" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.48s"/>
+<rect x="361.3953488372093" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.52s"/>
+<text x="361.3953488372093" y="250" font-size="12" class="m mu" text-anchor="start" >2016</text>
+<rect x="386.51162790697674" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.56s"/>
+<rect x="411.6279069767442" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.60s"/>
+<rect x="436.74418604651163" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.64s"/>
+<rect x="461.86046511627904" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.68s"/>
+<text x="461.86046511627904" y="250" font-size="12" class="m mu" text-anchor="start" >2017</text>
+<rect x="486.9767441860465" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.72s"/>
+<rect x="512.0930232558139" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.76s"/>
+<rect x="537.2093023255813" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.80s"/>
+<rect x="562.3255813953488" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.84s"/>
+<text x="562.3255813953488" y="250" font-size="12" class="m mu" text-anchor="start" >2018</text>
+<rect x="587.4418604651163" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.88s"/>
+<rect x="612.5581395348837" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.92s"/>
+<rect x="637.6744186046511" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:0.96s"/>
+<rect x="662.7906976744187" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.00s"/>
+<text x="662.7906976744187" y="250" font-size="12" class="m mu" text-anchor="start" >2019</text>
+<rect x="687.9069767441861" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.04s"/>
+<rect x="713.0232558139535" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.08s"/>
+<rect x="738.1395348837209" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.12s"/>
+<rect x="763.2558139534884" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.16s"/>
+<text x="763.2558139534884" y="250" font-size="12" class="m mu" text-anchor="start" >2020</text>
+<rect x="788.3720930232558" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.20s"/>
+<rect x="813.4883720930233" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.24s"/>
+<rect x="838.6046511627907" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.28s"/>
+<rect x="863.7209302325581" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.32s"/>
+<text x="863.7209302325581" y="250" font-size="12" class="m mu" text-anchor="start" >2021</text>
+<rect x="888.8372093023256" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.36s"/>
+<rect x="913.953488372093" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.40s"/>
+<rect x="939.0697674418604" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.44s"/>
+<rect x="964.1860465116279" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.48s"/>
+<text x="964.1860465116279" y="250" font-size="12" class="m mu" text-anchor="start" >2022</text>
+<rect x="989.3023255813954" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.52s"/>
+<rect x="1014.4186046511628" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.56s"/>
+<rect x="1039.5348837209303" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.60s"/>
+<rect x="1064.6511627906975" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.64s"/>
+<text x="1064.6511627906975" y="250" font-size="12" class="m mu" text-anchor="start" >2023</text>
+<rect x="1089.7674418604652" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.68s"/>
+<rect x="1114.8837209302326" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.72s"/>
+<rect x="1140.0" y="200" width="22.1" height="26" rx="2" fill="#0E1A24" opacity="0.85" class="pop" style="animation-delay:1.76s"/>
+<text x="60" y="188" font-size="12" class="mu" text-anchor="start" >■ Sentinel-2 10 m (from 2015 Q3)</text>
+<text x="330" y="188" font-size="12" class="mu" text-anchor="start" style="fill:#8AA0B3">■ HLS 30 m only</text>
+<line x1="521.0930232558139" y1="196" x2="521.0930232558139" y2="276" stroke="#FF4B2B" stroke-width="2" class="pulse"/>
+<circle cx="521.0930232558139" cy="276" r="4" fill="#FF4B2B"/>
+<text x="515.0930232558139" y="294" font-size="12" class="k" text-anchor="start" style="fill:#FF4B2B">IRMA · 10 SEP 2017</text>
+<line x1="922.953488372093" y1="196" x2="922.953488372093" y2="276" stroke="#FF4B2B" stroke-width="2" class="pulse"/>
+<circle cx="922.953488372093" cy="276" r="4" fill="#FF4B2B"/>
+<text x="916.953488372093" y="294" font-size="12" class="k" text-anchor="start" style="fill:#FF4B2B">IDA · 29 AUG 2021</text>
+<line x1="621.5581395348837" y1="196" x2="621.5581395348837" y2="326" stroke="#D99A2B" stroke-width="2" class=""/>
+<circle cx="621.5581395348837" cy="326" r="4" fill="#D99A2B"/>
+<text x="615.5581395348837" y="344" font-size="12" class="k" text-anchor="start" style="fill:#D99A2B">placebo year (Ida)</text>
+<line x1="420.6279069767442" y1="196" x2="420.6279069767442" y2="326" stroke="#D99A2B" stroke-width="2" class=""/>
+<circle cx="420.6279069767442" cy="326" r="4" fill="#D99A2B"/>
+<text x="414.6279069767442" y="344" font-size="12" class="k" text-anchor="start" style="fill:#D99A2B">placebo year (Irma)</text>
+<text x="60" y="380" font-size="13" class="mu" text-anchor="start" >Every forecast uses only data before its cutoff quarter; leads 0–4 are scored against what the satellites saw next.</text></svg>

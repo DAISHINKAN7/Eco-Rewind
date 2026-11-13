@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 671" width="1200" height="671" role="img" aria-label="Leaderboard">
+<title>Leaderboard</title><style>text{font-family:'Inter Tight',Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#0E1A24}
+.mu{fill:#5B6B78} .k{fill:#5B6B78;font-size:12px;letter-spacing:.18em;font-weight:600}
+.h{font-weight:700;letter-spacing:-.02em} .m{font-family:'JetBrains Mono',Consolas,monospace}
+.flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite} @keyframes flow{to{stroke-dashoffset:-24}}
+.gx{transform-box:fill-box;transform-origin:left center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+.gxr{transform-box:fill-box;transform-origin:right center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes gx{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fade{animation:fade 9s ease infinite} @keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:2400;animation:draw 8s ease-in-out infinite} @keyframes draw{0%{stroke-dashoffset:2400}45%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:2400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 8s ease infinite} @keyframes pop{0%,5%{transform:scale(0)}12%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite reverse} @keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 6s ease-in-out infinite} @keyframes scan{0%{transform:translateX(0)}50%{transform:translateX(1080px)}100%{transform:translateX(0)}}</style>
+<rect width="1200" height="671" rx="14" fill="#E8ECEF"/><line x1="40" y1="0" x2="40" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="120" y1="0" x2="120" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="200" y1="0" x2="200" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="280" y1="0" x2="280" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="360" y1="0" x2="360" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="440" y1="0" x2="440" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="520" y1="0" x2="520" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="600" y1="0" x2="600" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="680" y1="0" x2="680" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="760" y1="0" x2="760" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="840" y1="0" x2="840" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="920" y1="0" x2="920" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1000" y1="0" x2="1000" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1080" y1="0" x2="1080" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1160" y1="0" x2="1160" y2="671" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><rect x=".5" y=".5" width="1199" height="670" rx="14" fill="none" stroke="#C9D2D9"/>
+<text x="40" y="48" font-size="14" class="k" text-anchor="start" >LEADERBOARD</text>
+<text x="40" y="86" font-size="30" class="h" text-anchor="start" >Test R² on held-out spatial blocks — the baselines win</text>
+<rect x="40" y="100" width="44" height="3" fill="#FF4B2B"/>
+<text x="40" y="128" font-size="14" class="mu" text-anchor="start" >Bars: Louisiana 10 m (primary). Dots: Louisiana 30 m and Everglades 30 m.</text>
+<rect x="40" y="150" width="1120" height="496" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<line x1="414.44444444444446" y1="165" x2="414.44444444444446" y2="561" stroke="#C9D2D9" stroke-dasharray="0"/>
+<text x="414.44444444444446" y="586" font-size="11" class="m mu" text-anchor="middle" >0.0</text>
+<line x1="583.3333333333334" y1="165" x2="583.3333333333334" y2="561" stroke="#C9D2D9" stroke-dasharray="3 4"/>
+<text x="583.3333333333334" y="586" font-size="11" class="m mu" text-anchor="middle" >0.2</text>
+<line x1="752.2222222222222" y1="165" x2="752.2222222222222" y2="561" stroke="#C9D2D9" stroke-dasharray="3 4"/>
+<text x="752.2222222222222" y="586" font-size="11" class="m mu" text-anchor="middle" >0.4</text>
+<line x1="921.1111111111111" y1="165" x2="921.1111111111111" y2="561" stroke="#C9D2D9" stroke-dasharray="3 4"/>
+<text x="921.1111111111111" y="586" font-size="11" class="m mu" text-anchor="middle" >0.6</text>
+<line x1="1090.0" y1="165" x2="1090.0" y2="561" stroke="#C9D2D9" stroke-dasharray="3 4"/>
+<text x="1090.0" y="586" font-size="11" class="m mu" text-anchor="middle" >0.8</text>
+<text x="310" y="195" font-size="15" class="h" text-anchor="end" >Synthetic control</text>
+<rect x="414.44444444444446" y="181" width="604.6" height="20" rx="3" fill="#0E1A24" opacity="0.9" class="gx" style="animation-delay:0.00s"/>
+<text x="424.44444444444446" y="196" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.716</text>
+<circle cx="801.1" cy="191" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:0.80s"/>
+<circle cx="1060.4" cy="191" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:0.80s"/>
+<text x="310" y="239" font-size="15" class="" text-anchor="end" >Harmonic ∅trend</text>
+<rect x="414.44444444444446" y="225" width="593.6" height="20" rx="3" fill="#0E1A24" opacity="0.9" class="gx" style="animation-delay:0.12s"/>
+<text x="424.44444444444446" y="240" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.703</text>
+<circle cx="604.4" cy="235" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:0.92s"/>
+<circle cx="1012.5" cy="235" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:0.92s"/>
+<text x="310" y="283" font-size="15" class="" text-anchor="end" >Seasonal climatology</text>
+<rect x="414.44444444444446" y="269" width="589.8" height="20" rx="3" fill="#0E1A24" opacity="0.9" class="gx" style="animation-delay:0.24s"/>
+<text x="424.44444444444446" y="284" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.699</text>
+<circle cx="569.0" cy="279" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.04s"/>
+<circle cx="1007.0" cy="279" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.04s"/>
+<text x="310" y="327" font-size="15" class="" text-anchor="end" >LightGBM</text>
+<rect x="414.44444444444446" y="313" width="580.4" height="20" rx="3" fill="#0E1A24" opacity="0.9" class="gx" style="animation-delay:0.36s"/>
+<text x="424.44444444444446" y="328" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.687</text>
+<circle cx="528.0" cy="323" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.16s"/>
+<circle cx="1037.1" cy="323" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.16s"/>
+<text x="310" y="371" font-size="15" class="" text-anchor="end" >SimVP</text>
+<rect x="414.44444444444446" y="357" width="561.8" height="20" rx="3" fill="#1F3A5F" opacity="0.75" class="gx" style="animation-delay:0.48s"/>
+<text x="424.44444444444446" y="372" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.665</text>
+<circle cx="507.9" cy="367" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.28s"/>
+<circle cx="987.8" cy="367" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.28s"/>
+<text x="310" y="415" font-size="15" class="" text-anchor="end" >ConvLSTM</text>
+<rect x="414.44444444444446" y="401" width="546.5" height="20" rx="3" fill="#1F3A5F" opacity="0.75" class="gx" style="animation-delay:0.60s"/>
+<text x="424.44444444444446" y="416" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.647</text>
+<circle cx="457.9" cy="411" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.40s"/>
+<circle cx="529.1" cy="411" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.40s"/>
+<text x="310" y="459" font-size="15" class="" text-anchor="end" >EcoTransformer</text>
+<rect x="414.44444444444446" y="445" width="492.1" height="20" rx="3" fill="#1F3A5F" opacity="0.75" class="gx" style="animation-delay:0.72s"/>
+<text x="424.44444444444446" y="460" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.583</text>
+<circle cx="560.5" cy="455" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.52s"/>
+<circle cx="919.8" cy="455" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.52s"/>
+<text x="310" y="503" font-size="15" class="" text-anchor="end" >Harmonic (trend)</text>
+<rect x="414.44444444444446" y="489" width="450.6" height="20" rx="3" fill="#0E1A24" opacity="0.9" class="gx" style="animation-delay:0.84s"/>
+<text x="424.44444444444446" y="504" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.534</text>
+<circle cx="441.7" cy="499" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.64s"/>
+<circle cx="916.1" cy="499" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.64s"/>
+<text x="310" y="547" font-size="15" class="" text-anchor="end" >Persistence</text>
+<rect x="414.44444444444446" y="533" width="90.0" height="20" rx="3" fill="#0E1A24" opacity="0.9" class="gx" style="animation-delay:0.96s"/>
+<text x="424.44444444444446" y="548" font-size="12" class="m h fade" text-anchor="start" style="fill:#fff">0.107</text>
+<circle cx="330.0" cy="543" r="6" fill="#D99A2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.76s"/>
+<text x="340.0" y="561" font-size="10" class="m mu" text-anchor="start" >-0.69</text>
+<circle cx="932.5" cy="543" r="6" fill="#FF4B2B" stroke="#fff" stroke-width="1.5" class="pop" style="animation-delay:1.76s"/>
+<rect x="60" y="611" width="14" height="10" fill="#0E1A24"/>
+<text x="80" y="621" font-size="12" class="mu" text-anchor="start" >baseline · LA 10 m</text>
+<rect x="230" y="611" width="14" height="10" fill="#1F3A5F" opacity=".75"/>
+<text x="250" y="621" font-size="12" class="mu" text-anchor="start" >deep · LA 10 m</text>
+<circle cx="390" cy="616" r="6" fill="#D99A2B"/>
+<text x="402" y="621" font-size="12" class="mu" text-anchor="start" >LA 30 m</text>
+<circle cx="490" cy="616" r="6" fill="#FF4B2B"/>
+<text x="502" y="621" font-size="12" class="mu" text-anchor="start" >Everglades 30 m</text></svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Pipeline">
+<title>Pipeline</title><style>text{font-family:'Inter Tight',Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#0E1A24}
+.mu{fill:#5B6B78} .k{fill:#5B6B78;font-size:12px;letter-spacing:.18em;font-weight:600}
+.h{font-weight:700;letter-spacing:-.02em} .m{font-family:'JetBrains Mono',Consolas,monospace}
+.flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite} @keyframes flow{to{stroke-dashoffset:-24}}
+.gx{transform-box:fill-box;transform-origin:left center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+.gxr{transform-box:fill-box;transform-origin:right center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes gx{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fade{animation:fade 9s ease infinite} @keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:2400;animation:draw 8s ease-in-out infinite} @keyframes draw{0%{stroke-dashoffset:2400}45%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:2400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 8s ease infinite} @keyframes pop{0%,5%{transform:scale(0)}12%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite reverse} @keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 6s ease-in-out infinite} @keyframes scan{0%{transform:translateX(0)}50%{transform:translateX(1080px)}100%{transform:translateX(0)}}</style>
+<rect width="1200" height="440" rx="14" fill="#E8ECEF"/><line x1="40" y1="0" x2="40" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="120" y1="0" x2="120" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="200" y1="0" x2="200" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="280" y1="0" x2="280" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="360" y1="0" x2="360" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="440" y1="0" x2="440" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="520" y1="0" x2="520" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="600" y1="0" x2="600" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="680" y1="0" x2="680" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="760" y1="0" x2="760" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="840" y1="0" x2="840" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="920" y1="0" x2="920" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1000" y1="0" x2="1000" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1080" y1="0" x2="1080" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1160" y1="0" x2="1160" y2="440" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><rect x=".5" y=".5" width="1199" height="439" rx="14" fill="none" stroke="#C9D2D9"/>
+<text x="40" y="48" font-size="14" class="k" text-anchor="start" >PIPELINE</text>
+<text x="40" y="86" font-size="30" class="h" text-anchor="start" >From raw orbits to a defensible attribution</text>
+<rect x="40" y="100" width="44" height="3" fill="#FF4B2B"/>
+<rect x="40" y="150" width="168" height="230" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="56" y="184" font-size="13" class="m mu" text-anchor="start" >01</text>
+<text x="56" y="216" font-size="22" class="h" text-anchor="start" >Acquire</text>
+<rect x="40" y="150" width="168" height="3" fill="#0E1A24"/>
+<text x="56" y="252" font-size="13" class="mu" text-anchor="start" >Earth Engine export</text>
+<text x="56" y="278" font-size="13" class="mu" text-anchor="start" >S2 SR + S1 VV/VH</text>
+<text x="56" y="304" font-size="13" class="mu" text-anchor="start" >320 rasters</text>
+<text x="56" y="330" font-size="13" class="mu" text-anchor="start" >96.6 / 150 EECU-h</text>
+<line x1="208" y1="265" x2="228" y2="265" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="228" y="150" width="168" height="230" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="244" y="184" font-size="13" class="m mu" text-anchor="start" >02</text>
+<text x="244" y="216" font-size="22" class="h" text-anchor="start" >Cube</text>
+<rect x="228" y="150" width="168" height="3" fill="#0E1A24"/>
+<text x="244" y="252" font-size="13" class="mu" text-anchor="start" >quarterly medians</text>
+<text x="244" y="278" font-size="13" class="mu" text-anchor="start" >cloud + shadow mask</text>
+<text x="244" y="304" font-size="13" class="mu" text-anchor="start" >indices + VV/VH + statics</text>
+<text x="244" y="330" font-size="13" class="mu" text-anchor="start" >(T, C, H, W) .npy</text>
+<line x1="396" y1="265" x2="416" y2="265" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="416" y="150" width="168" height="230" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="432" y="184" font-size="13" class="m mu" text-anchor="start" >03</text>
+<text x="432" y="216" font-size="22" class="h" text-anchor="start" >Fold</text>
+<rect x="416" y="150" width="168" height="3" fill="#0E1A24"/>
+<text x="432" y="252" font-size="13" class="mu" text-anchor="start" >3.84 km blocks</text>
+<text x="432" y="278" font-size="13" class="mu" text-anchor="start" >640 m buffers</text>
+<text x="432" y="304" font-size="13" class="mu" text-anchor="start" >train / cal / test</text>
+<text x="432" y="330" font-size="13" class="mu" text-anchor="start" >per site + res.</text>
+<line x1="584" y1="265" x2="604" y2="265" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="604" y="150" width="168" height="230" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="620" y="184" font-size="13" class="m mu" text-anchor="start" >04</text>
+<text x="620" y="216" font-size="22" class="h" text-anchor="start" >Train</text>
+<rect x="604" y="150" width="168" height="3" fill="#0E1A24"/>
+<text x="620" y="252" font-size="13" class="mu" text-anchor="start" >6 baselines · CPU</text>
+<text x="620" y="278" font-size="13" class="mu" text-anchor="start" >3 deep nets · T4</text>
+<text x="620" y="304" font-size="13" class="mu" text-anchor="start" >7 ablations · 2 transfer</text>
+<text x="620" y="330" font-size="13" class="mu" text-anchor="start" >≈ 66 Colab CCU</text>
+<line x1="772" y1="265" x2="792" y2="265" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="792" y="150" width="168" height="230" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="808" y="184" font-size="13" class="m mu" text-anchor="start" >05</text>
+<text x="808" y="216" font-size="22" class="h" text-anchor="start" >Calibrate</text>
+<rect x="792" y="150" width="168" height="3" fill="#0E1A24"/>
+<text x="808" y="252" font-size="13" class="mu" text-anchor="start" >split conformal</text>
+<text x="808" y="278" font-size="13" class="mu" text-anchor="start" >90 % target</text>
+<text x="808" y="304" font-size="13" class="mu" text-anchor="start" >0.885 – 0.902</text>
+<text x="808" y="330" font-size="13" class="mu" text-anchor="start" >achieved</text>
+<line x1="960" y1="265" x2="980" y2="265" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="980" y="150" width="168" height="230" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="996" y="184" font-size="13" class="m mu" text-anchor="start" >06</text>
+<text x="996" y="216" font-size="22" class="h" text-anchor="start" >Attribute</text>
+<rect x="980" y="150" width="168" height="3" fill="#FF4B2B"/>
+<text x="996" y="252" font-size="13" class="mu" text-anchor="start" >deficit maps</text>
+<text x="996" y="278" font-size="13" class="mu" text-anchor="start" >52 placebo tests</text>
+<text x="996" y="304" font-size="13" class="mu" text-anchor="start" >HURDAT2 ρ</text>
+<text x="996" y="330" font-size="13" class="mu" text-anchor="start" >auto verdicts</text>
+<circle r="6" fill="#FF4B2B"><animateMotion dur="6s" repeatCount="indefinite" path="M40 410 L1160 410"/></circle><line x1="40" y1="410" x2="1160" y2="410" stroke="#C9D2D9"/></svg>

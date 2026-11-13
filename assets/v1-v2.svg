@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 570" width="1200" height="570" role="img" aria-label="v1 to v2">
+<title>v1 to v2</title><style>text{font-family:'Inter Tight',Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#0E1A24}
+.mu{fill:#5B6B78} .k{fill:#5B6B78;font-size:12px;letter-spacing:.18em;font-weight:600}
+.h{font-weight:700;letter-spacing:-.02em} .m{font-family:'JetBrains Mono',Consolas,monospace}
+.flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite} @keyframes flow{to{stroke-dashoffset:-24}}
+.gx{transform-box:fill-box;transform-origin:left center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+.gxr{transform-box:fill-box;transform-origin:right center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes gx{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fade{animation:fade 9s ease infinite} @keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:2400;animation:draw 8s ease-in-out infinite} @keyframes draw{0%{stroke-dashoffset:2400}45%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:2400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 8s ease infinite} @keyframes pop{0%,5%{transform:scale(0)}12%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite reverse} @keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 6s ease-in-out infinite} @keyframes scan{0%{transform:translateX(0)}50%{transform:translateX(1080px)}100%{transform:translateX(0)}}</style>
+<rect width="1200" height="570" rx="14" fill="#E8ECEF"/><line x1="40" y1="0" x2="40" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="120" y1="0" x2="120" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="200" y1="0" x2="200" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="280" y1="0" x2="280" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="360" y1="0" x2="360" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="440" y1="0" x2="440" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="520" y1="0" x2="520" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="600" y1="0" x2="600" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="680" y1="0" x2="680" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="760" y1="0" x2="760" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="840" y1="0" x2="840" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="920" y1="0" x2="920" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1000" y1="0" x2="1000" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1080" y1="0" x2="1080" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1160" y1="0" x2="1160" y2="570" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><rect x=".5" y=".5" width="1199" height="569" rx="14" fill="none" stroke="#C9D2D9"/>
+<text x="40" y="48" font-size="14" class="k" text-anchor="start" >v1 → v2 AUDIT</text>
+<text x="40" y="86" font-size="30" class="h" text-anchor="start" >What changed, and why the headline number went down</text>
+<rect x="40" y="100" width="44" height="3" fill="#FF4B2B"/>
+<rect x="40" y="150" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="176" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">Pixel-random train/test split</text>
+<line x1="550" y1="170" x2="648" y2="170" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="150" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="150" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="176" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.00s">3.84 km spatial blocks + 640 m buffers</text>
+<rect x="40" y="200" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="226" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">R² 0.901 headline</text>
+<line x1="550" y1="220" x2="648" y2="220" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="200" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="200" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="226" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.12s">R² ≈ 0.70, honestly evaluated</text>
+<rect x="40" y="250" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="276" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">5 deep architectures, no baselines</text>
+<line x1="550" y1="270" x2="648" y2="270" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="250" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="250" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="276" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.24s">19 models incl. 6 classical baselines</text>
+<rect x="40" y="300" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="326" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">Point forecasts</text>
+<line x1="550" y1="320" x2="648" y2="320" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="300" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="300" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="326" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.36s">Split-conformal 90 % intervals</text>
+<rect x="40" y="350" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="376" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">Deficit taken at face value</text>
+<line x1="550" y1="370" x2="648" y2="370" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="350" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="350" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="376" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.48s">52 pre-registered placebo tests</text>
+<rect x="40" y="400" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="426" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">“20× attribution spread” as a finding</text>
+<line x1="550" y1="420" x2="648" y2="420" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="400" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="400" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="426" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.60s">Spread is model choice → 0.007 after gating</text>
+<rect x="40" y="450" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="476" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">No external check</text>
+<line x1="550" y1="470" x2="648" y2="470" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="450" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="450" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="476" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.72s">HURDAT2 track / coast / wind ρ</text>
+<rect x="40" y="500" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="526" font-size="14" class="mu" text-anchor="start" text-decoration="line-through">Results edited by hand</text>
+<line x1="550" y1="520" x2="648" y2="520" stroke="#FF4B2B" stroke-width="2" class="flow"/>
+<rect x="660" y="500" width="500" height="40" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="660" y="500" width="4" height="40" fill="#FF4B2B"/>
+<text x="680" y="526" font-size="14" class="h fade" text-anchor="start" style="animation-delay:0.84s">Verdicts generated by scripts, 55 tests</text></svg>

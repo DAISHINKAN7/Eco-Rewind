@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="Architectures">
+<title>Architectures</title><style>text{font-family:'Inter Tight',Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#0E1A24}
+.mu{fill:#5B6B78} .k{fill:#5B6B78;font-size:12px;letter-spacing:.18em;font-weight:600}
+.h{font-weight:700;letter-spacing:-.02em} .m{font-family:'JetBrains Mono',Consolas,monospace}
+.flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite} @keyframes flow{to{stroke-dashoffset:-24}}
+.gx{transform-box:fill-box;transform-origin:left center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+.gxr{transform-box:fill-box;transform-origin:right center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes gx{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fade{animation:fade 9s ease infinite} @keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:2400;animation:draw 8s ease-in-out infinite} @keyframes draw{0%{stroke-dashoffset:2400}45%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:2400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 8s ease infinite} @keyframes pop{0%,5%{transform:scale(0)}12%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite reverse} @keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 6s ease-in-out infinite} @keyframes scan{0%{transform:translateX(0)}50%{transform:translateX(1080px)}100%{transform:translateX(0)}}</style>
+<rect width="1200" height="520" rx="14" fill="#E8ECEF"/><line x1="40" y1="0" x2="40" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="120" y1="0" x2="120" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="200" y1="0" x2="200" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="280" y1="0" x2="280" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="360" y1="0" x2="360" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="440" y1="0" x2="440" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="520" y1="0" x2="520" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="600" y1="0" x2="600" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="680" y1="0" x2="680" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="760" y1="0" x2="760" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="840" y1="0" x2="840" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="920" y1="0" x2="920" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1000" y1="0" x2="1000" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1080" y1="0" x2="1080" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1160" y1="0" x2="1160" y2="520" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><rect x=".5" y=".5" width="1199" height="519" rx="14" fill="none" stroke="#C9D2D9"/>
+<text x="40" y="48" font-size="14" class="k" text-anchor="start" >DEEP NETWORKS</text>
+<text x="40" y="86" font-size="30" class="h" text-anchor="start" >Three spatiotemporal architectures, same inputs, same heads</text>
+<rect x="40" y="100" width="44" height="3" fill="#FF4B2B"/>
+<rect x="40" y="150" width="356" height="340" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="60" y="188" font-size="22" class="h" text-anchor="start" >SimVP</text>
+<text x="376" y="188" font-size="14" class="m" text-anchor="end" >R² 0.665</text>
+<rect x="60" y="210" width="316" height="40" rx="8" fill="#E8ECEF" stroke="#C9D2D9"/>
+<text x="218" y="235" font-size="12" class="m mu" text-anchor="middle" >input  T_in × C × h × w  (+ masks, SAR, statics)</text>
+<line x1="218" y1="250" x2="218" y2="270" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="80" y="270" width="276" height="42" rx="6" fill="#1F3A5F" opacity="0.92"/>
+<text x="96" y="296" font-size="14" class="h" text-anchor="start" style="fill:#fff">Encoder</text>
+<text x="340" y="296" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">conv · 2× ↓ · 32 ch</text>
+<line x1="218" y1="312" x2="218" y2="326" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="80" y="326" width="276" height="42" rx="6" fill="#1F3A5F" opacity="0.8"/>
+<text x="96" y="352" font-size="14" class="h" text-anchor="start" style="fill:#fff">Translator</text>
+<text x="340" y="352" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">4 × gSTA · 128 ch</text>
+<line x1="218" y1="368" x2="218" y2="382" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="80" y="382" width="276" height="42" rx="6" fill="#1F3A5F" opacity="0.68"/>
+<text x="96" y="408" font-size="14" class="h" text-anchor="start" style="fill:#fff">Decoder</text>
+<text x="340" y="408" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">2× ↑ + skip</text>
+<line x1="218" y1="424" x2="218" y2="440" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<text x="218" y="466" font-size="12" class="mu" text-anchor="middle" >quantile forecasts per lead → conformal interval</text>
+<rect x="416" y="150" width="356" height="340" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="436" y="188" font-size="22" class="h" text-anchor="start" >ConvLSTM</text>
+<text x="752" y="188" font-size="14" class="m" text-anchor="end" >R² 0.647</text>
+<rect x="436" y="210" width="316" height="40" rx="8" fill="#E8ECEF" stroke="#C9D2D9"/>
+<text x="594" y="235" font-size="12" class="m mu" text-anchor="middle" >input  T_in × C × h × w  (+ masks, SAR, statics)</text>
+<line x1="594" y1="250" x2="594" y2="270" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="456" y="270" width="276" height="42" rx="6" fill="#8AA0B3" opacity="0.92"/>
+<text x="472" y="296" font-size="14" class="h" text-anchor="start" style="fill:#fff">ConvLSTM × 2</text>
+<text x="716" y="296" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">hidden 32</text>
+<line x1="594" y1="312" x2="594" y2="326" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="456" y="326" width="276" height="42" rx="6" fill="#8AA0B3" opacity="0.8"/>
+<text x="472" y="352" font-size="14" class="h" text-anchor="start" style="fill:#fff">Unroll</text>
+<text x="716" y="352" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">over input quarters</text>
+<line x1="594" y1="368" x2="594" y2="382" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="456" y="382" width="276" height="42" rx="6" fill="#8AA0B3" opacity="0.68"/>
+<text x="472" y="408" font-size="14" class="h" text-anchor="start" style="fill:#fff">Conv head</text>
+<text x="716" y="408" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">→ leads × q</text>
+<line x1="594" y1="424" x2="594" y2="440" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<text x="594" y="466" font-size="12" class="mu" text-anchor="middle" >quantile forecasts per lead → conformal interval</text>
+<rect x="792" y="150" width="356" height="340" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<text x="812" y="188" font-size="22" class="h" text-anchor="start" >EcoTransformer</text>
+<text x="1128" y="188" font-size="14" class="m" text-anchor="end" >R² 0.583</text>
+<rect x="812" y="210" width="316" height="40" rx="8" fill="#E8ECEF" stroke="#C9D2D9"/>
+<text x="970" y="235" font-size="12" class="m mu" text-anchor="middle" >input  T_in × C × h × w  (+ masks, SAR, statics)</text>
+<line x1="970" y1="250" x2="970" y2="270" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="832" y="270" width="276" height="42" rx="6" fill="#FF4B2B" opacity="0.92"/>
+<text x="848" y="296" font-size="14" class="h" text-anchor="start" style="fill:#fff">Patch embed</text>
+<text x="1092" y="296" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">8×8 · dim 128</text>
+<line x1="970" y1="312" x2="970" y2="326" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="832" y="326" width="276" height="42" rx="6" fill="#FF4B2B" opacity="0.8"/>
+<text x="848" y="352" font-size="14" class="h" text-anchor="start" style="fill:#fff">Time ⊥ Space</text>
+<text x="1092" y="352" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">4 + 4 blocks · 4 heads</text>
+<line x1="970" y1="368" x2="970" y2="382" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<rect x="832" y="382" width="276" height="42" rx="6" fill="#FF4B2B" opacity="0.68"/>
+<text x="848" y="408" font-size="14" class="h" text-anchor="start" style="fill:#fff">Lead queries</text>
+<text x="1092" y="408" font-size="12" class="m" text-anchor="end" style="fill:#fff;opacity:.85">cross-attn → unpatch</text>
+<line x1="970" y1="424" x2="970" y2="440" stroke="#0E1A24" stroke-width="1.5" class="flow"/>
+<text x="970" y="466" font-size="12" class="mu" text-anchor="middle" >quantile forecasts per lead → conformal interval</text></svg>

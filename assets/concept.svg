@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 530" width="1200" height="530" role="img" aria-label="Counterfactual concept">
+<title>Counterfactual concept</title><style>text{font-family:'Inter Tight',Inter,'Segoe UI',Helvetica,Arial,sans-serif;fill:#0E1A24}
+.mu{fill:#5B6B78} .k{fill:#5B6B78;font-size:12px;letter-spacing:.18em;font-weight:600}
+.h{font-weight:700;letter-spacing:-.02em} .m{font-family:'JetBrains Mono',Consolas,monospace}
+.flow{stroke-dasharray:5 7;animation:flow 1.2s linear infinite} @keyframes flow{to{stroke-dashoffset:-24}}
+.gx{transform-box:fill-box;transform-origin:left center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+.gxr{transform-box:fill-box;transform-origin:right center;animation:gx 9s cubic-bezier(.2,.7,.2,1) infinite}
+@keyframes gx{0%{transform:scaleX(0)}18%{transform:scaleX(1)}92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.fade{animation:fade 9s ease infinite} @keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:2400;animation:draw 8s ease-in-out infinite} @keyframes draw{0%{stroke-dashoffset:2400}45%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:2400}}
+.pop{transform-box:fill-box;transform-origin:center;animation:pop 8s ease infinite} @keyframes pop{0%,5%{transform:scale(0)}12%,92%{transform:scale(1)}100%{transform:scale(0)}}
+.spin{transform-box:fill-box;transform-origin:center;animation:spin 14s linear infinite reverse} @keyframes spin{to{transform:rotate(360deg)}}
+.pulse{animation:pulse 2.4s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}}
+.scan{animation:scan 6s ease-in-out infinite} @keyframes scan{0%{transform:translateX(0)}50%{transform:translateX(1080px)}100%{transform:translateX(0)}}</style>
+<rect width="1200" height="530" rx="14" fill="#E8ECEF"/><line x1="40" y1="0" x2="40" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="120" y1="0" x2="120" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="200" y1="0" x2="200" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="280" y1="0" x2="280" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="360" y1="0" x2="360" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="440" y1="0" x2="440" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="520" y1="0" x2="520" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="600" y1="0" x2="600" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="680" y1="0" x2="680" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="760" y1="0" x2="760" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="840" y1="0" x2="840" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="920" y1="0" x2="920" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1000" y1="0" x2="1000" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1080" y1="0" x2="1080" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><line x1="1160" y1="0" x2="1160" y2="530" stroke="#C9D2D9" stroke-width=".5" opacity=".5"/><rect x=".5" y=".5" width="1199" height="529" rx="14" fill="none" stroke="#C9D2D9"/>
+<text x="40" y="48" font-size="14" class="k" text-anchor="start" >THE IDEA</text>
+<text x="40" y="86" font-size="30" class="h" text-anchor="start" >Damage = observed − what would have happened without the storm</text>
+<rect x="40" y="100" width="44" height="3" fill="#FF4B2B"/>
+<rect x="40" y="145" width="1120" height="360" rx="8" fill="#F6F8F9" stroke="#C9D2D9"/>
+<rect x="860.0" y="160" width="260.0" height="300" fill="#FF4B2B" opacity=".05"/>
+<line x1="860.0" y1="160" x2="860.0" y2="460" stroke="#FF4B2B" stroke-width="1.5"/>
+<text x="868.0" y="176" font-size="11" class="k" text-anchor="start" style="fill:#FF4B2B">LANDFALL</text>
+<text x="80.0" y="176" font-size="11" class="k" text-anchor="start" >TRAINING HISTORY (pre-storm only)</text>
+<g opacity=".12"><polygon points="860.0,253.5 892.5,234.0 925.0,331.6 957.5,350.0 990.0,256.2 1022.5,245.5 1055.0,335.3 1087.5,349.5 1120.0,267.9 1120.0,324.1 1087.5,405.7 1055.0,391.6 1022.5,301.8 990.0,312.5 957.5,406.2 925.0,387.9 892.5,290.3 860.0,309.7" fill="#1F3A5F" class="fade"/></g>
+<g opacity=".4"><polygon points="860.0,281.6 892.5,262.2 925.0,359.7 957.5,378.1 990.0,284.4 1022.5,273.6 1055.0,363.5 1087.5,377.6 1120.0,296.0 1120.0,287.3 1087.5,388.1 1055.0,366.8 1022.5,279.8 990.0,295.5 957.5,390.3 925.0,385.6 892.5,323.5 860.0,377.1" fill="#FF4B2B" class="fade"/></g>
+<polyline points="80.0,275.9 112.5,257.6 145.0,342.9 177.5,360.3 210.0,267.7 242.5,244.7 275.0,328.2 307.5,345.0 340.0,252.9 372.5,241.0 405.0,328.1 437.5,347.9 470.0,258.1 502.5,242.3 535.0,333.2 567.5,343.6 600.0,255.1 632.5,240.1 665.0,333.6 697.5,359.8 730.0,269.8 762.5,251.8 795.0,344.5 827.5,362.9 860.0,377.1 892.5,323.5 925.0,385.6 957.5,390.3 990.0,295.5 1022.5,279.8 1055.0,366.8 1087.5,388.1 1120.0,287.3" fill="none" stroke="#0E1A24" stroke-width="2.4" class="draw"/>
+<polyline points="827.5,367.8 860.0,281.6 892.5,262.2 925.0,359.7 957.5,378.1 990.0,284.4 1022.5,273.6 1055.0,363.5 1087.5,377.6 1120.0,296.0" fill="none" stroke="#1F3A5F" stroke-width="2.4" stroke-dasharray="7 5"/>
+<text x="80.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2015</text>
+<text x="210.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2016</text>
+<text x="340.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2017</text>
+<text x="470.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2018</text>
+<text x="600.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2019</text>
+<text x="730.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2020</text>
+<text x="860.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2021</text>
+<text x="990.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2022</text>
+<text x="1120.0" y="480" font-size="11" class="mu m" text-anchor="middle" >2023</text>
+<rect x="60" y="487" width="18" height="3" fill="#0E1A24" opacity="1"/>
+<text x="86" y="495" font-size="13" class="mu" text-anchor="start" >observed NDVI</text>
+<rect x="209.60000000000002" y="487" width="18" height="3" fill="#1F3A5F" opacity="1"/>
+<text x="235.60000000000002" y="495" font-size="13" class="mu" text-anchor="start" >counterfactual forecast (no storm)</text>
+<rect x="510.40000000000003" y="487" width="18" height="10" fill="#1F3A5F" opacity="0.2"/>
+<text x="536.4000000000001" y="495" font-size="13" class="mu" text-anchor="start" >90 % conformal band</text>
+<rect x="703.2" y="487" width="18" height="10" fill="#FF4B2B" opacity="0.5"/>
+<text x="729.2" y="495" font-size="13" class="mu" text-anchor="start" >attributed deficit — only if placebos pass</text></svg>
